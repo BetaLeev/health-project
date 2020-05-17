@@ -1,0 +1,16 @@
+page {
+  background: #fcfcfc;
+}
+.article-content {
+  margin: 20rpx;
+  font-size: 32rpx;
+}
+.textarea {
+  width: 710rpx;
+  margin: 0 auto;
+}
+.publish-article {
+  position: fixed;
+  bottom: 0;
+}
+

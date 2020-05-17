@@ -1,0 +1,45 @@
+<block wx:if="{{$taroCompReady}}">
+    <view class="health">
+        <at-segmented-control compid="{{$compid__5}}"></at-segmented-control>
+        <block wx:if="{{current === 0}}">
+            <view class="tab-content">
+                <view class="tab-container">
+                    <view class="tab-title">早餐</view>
+                    <view class="tab-list">火腿</view>
+                    <view class="tab-list">火腿</view>
+                    <view class="tab-list">火腿</view>
+                </view>
+            </view>
+        </block>
+        <block wx:if="{{current === 1}}">
+            <view class="tab-content">
+                <view class="tab-container">
+                    <view class="tab-title">午餐</view>
+                    <view class="tab-list">火腿</view>
+                    <view class="tab-list">火腿</view>
+                    <view class="tab-list">火腿</view>
+                </view>
+            </view>
+        </block>
+        <block wx:if="{{current === 2}}">
+            <view class="tab-content">
+                <view class="tab-container">
+                    <view class="tab-title">晚餐</view>
+                    <view class="tab-list">火腿</view>
+                    <view class="tab-list">火腿</view>
+                    <view class="tab-list">火腿</view>
+                </view>
+            </view>
+        </block>
+        <view class="line">
+            <view class="text-center">健康的生活作息安排!</view>
+            <at-timeline compid="{{$compid__6}}"></at-timeline>
+        </view>
+        <navigator class="shareArticle" open-type="navigate" url="/pages/shareArticle/shareArticle">发布文章</navigator>
+        <view wx:key="index" class="list-wrap" wx:for="{{health}}" wx:for-item="item" wx:for-index="index">
+            <image src="{{item.url}}" class="img"></image>
+            <view class="title">{{item.title}}</view>
+            <view class="f-title">{{item.container}}</view>
+        </view>
+    </view>
+</block>

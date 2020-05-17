@@ -1,0 +1,34 @@
+<block wx:if="{{$taroCompReady}}">
+    <view class="my">
+        <view class="header-wrap">
+            <at-avatar compid="{{$compid__96}}"></at-avatar>
+            <view class="right">
+                <view class="title">{{userInfo.nickName}}</view>
+                <block wx:if="{{userInfo.nikeName == ''}}">
+                    <at-button compid="{{$compid__97}}">身份未绑定</at-button>
+                </block>
+            </view>
+        </view>
+        <view class="info-wrap yellow-color">
+            <image class="img"></image>
+            <view data-index="1" bindtap="toHome" class="right">
+                <view class="title">我的健康信息</view>
+                <view class="f-title">查看我录入的健康信息</view>
+            </view>
+        </view>
+        <view class="info-wrap pink-color">
+            <image class="img"></image>
+            <view class="right" data-index="2" bindtap="toHome">
+                <view class="title">我的运动信息</view>
+                <view class="f-title">查看我的运动信息</view>
+            </view>
+        </view>
+        <view class="info-wrap skyblue-color">
+            <image class="img"></image>
+            <view class="right">
+                <view class="title">其他设置</view>
+                <view class="f-title"></view>
+            </view>
+        </view>
+    </view>
+</block>

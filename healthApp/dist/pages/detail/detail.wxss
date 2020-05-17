@@ -1,0 +1,14 @@
+.detail {
+  text-align: center;
+  margin-top: 20rpx;
+}
+.detail .img {
+  width: 710rpx;
+  height: 300rpx;
+  margin: 30rpx auto;
+}
+.detail .content-wrap {
+  margin: 0 auto;
+  width: 710rpx;
+}
+

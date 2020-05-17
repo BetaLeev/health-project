@@ -1,0 +1,53 @@
+<block wx:if="{{$taroCompReady}}">
+    <view class="sport"><text class="text-center">我的 <text style="color:red">{{title}}</text></text>
+        <view class="text-center">我的<text style="color:red">{{title}}</text>记录</view>
+        <view>录入我的信息</view>
+        <block>
+            <block wx:if="{{type === '1'}}">
+                <view>
+                    <at-input compid="{{$compid__140}}"></at-input>
+                    <at-input compid="{{$compid__141}}"></at-input>
+                    <at-input compid="{{$compid__142}}"></at-input>
+                </view>
+            </block>
+            <block wx:else>
+                <view>
+                    <at-input compid="{{$compid__143}}"></at-input>
+                    <at-input compid="{{$compid__144}}"></at-input>
+                    <at-input compid="{{$compid__145}}"></at-input>
+                </view>
+            </block>
+        </block>
+        <view class="save-history">👇</view>
+        <at-button compid="{{$compid__146}}">录入保存</at-button>
+        <view class="save-history">我的历史记录</view>
+        <block>
+            <block wx:if="{{type === '1'}}">
+                <view>
+                    <view class="item" wx:for="{{loopArray36}}" wx:for-item="item" wx:for-index="_anonIdx2">
+                        <view class="item-text">{{item.$original.fare}}</view>
+                        <view class="item-text">{{item.$original.ganmao}}</view>
+                        <view class="item-text">{{item.$original.touyun}}</view>
+                        <view class="item-date">
+                            <view class="item-text">{{" "}}时间：{{item.$loopState__temp2}} _</view>
+                            <view class="item-text">{{item.$loopState__temp4}}</view>
+                        </view>
+                    </view>
+                </view>
+            </block>
+            <block wx:else>
+                <view>
+                    <view class="item" wx:for="{{loopArray37}}" wx:for-item="item" wx:for-index="_anonIdx4">
+                        <view class="item-text">{{item.$original.run}}</view>
+                        <view class="item-text">{{item.$original.walk}}</view>
+                        <view class="item-text">{{item.$original.other}}</view>
+                        <view class="item-date">
+                            <view class="item-text">{{" "}}时间：{{item.$loopState__temp6}} _</view>
+                            <view class="item-text">{{item.$loopState__temp8}}</view>
+                        </view>
+                    </view>
+                </view>
+            </block>
+        </block>
+    </view>
+</block>

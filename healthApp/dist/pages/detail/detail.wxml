@@ -1,0 +1,9 @@
+<block wx:if="{{$taroCompReady}}">
+    <view class="detail">
+        <view class="title">{{title}}</view>
+        <image class="img" src="{{url}}"></image>
+        <view class="content-wrap">
+            <rich-text nodes="{{content}}"></rich-text>
+        </view>
+    </view>
+</block>

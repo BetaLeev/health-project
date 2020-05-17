@@ -1,0 +1,29 @@
+.sport {
+  text-align: center;
+  margin: 0 auto;
+  padding: 50rpx;
+}
+.sport .item {
+  border-radius: 13rpx;
+  margin-top: 22rpx;
+  padding: 20rpx;
+  box-sizing: border-box;
+  border: 1rpx solid paleturquoise;
+  padding-bottom: 20rpx;
+}
+.item-date {
+  margin-top: 30rpx;
+  display: flex;
+  font-size: 22rpx;
+  margin-left: 50%;
+}
+.text-center {
+  text-align: center;
+  font-size: 32rpx;
+  margin-bottom: 2rpx;
+}
+.save-history {
+  margin: 33rpx;
+  font-size: 55rpx;
+}
+

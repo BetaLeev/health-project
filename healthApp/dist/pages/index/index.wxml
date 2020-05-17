@@ -1,0 +1,19 @@
+<block wx:if="{{$taroCompReady}}">
+    <view class="index">
+        <swiper class="test-h" indicator-color="#999" indicator-active-color="#333" circular="{{true}}" indicator-dots="{{true}}" autoplay="{{true}}">
+            <swiper-item wx:key="index" wx:for="{{loopArray0}}" wx:for-item="item" wx:for-index="index">
+                <image mode="aspectFit" style="width:100%;" src="{{item.$loopState__temp2}}" alt=""></image>
+            </swiper-item>
+        </swiper>
+        <view class="nav-title">健康秘籍分享</view>
+        <block wx:if="{{news}}">
+            <navigator open-type="navigate" url="{{'/pages/detail/detail?c=' + item.tmp}}" wx:key="index" wx:for="{{loopArray1}}" wx:for-item="item" wx:for-index="index">
+                <view class="list-wrap" wx:key="index">
+                    <view class="list-title">{{item.$original.title}}</view>
+                    <view class="list-content">{{item.$original.content}}</view>
+                    <image class="list-img" src="{{item.$original.url}}"></image>
+                </view>
+            </navigator>
+        </block>
+    </view>
+</block>

@@ -1,0 +1,50 @@
+.health {
+  background: #f1f2f4;
+}
+.list-wrap {
+  width: 750rpx;
+  height: 400rpx;
+  margin-bottom: 20rpx;
+  font-size: 28rpx;
+  text-align: center;
+  border-top: 1rpx solid #f1f2f4;
+  background: #fff;
+  border-bottom: 1rpx solid #f1f2f4;
+  margin-top: 20rpx;
+}
+.list-wrap .img {
+  height: 300rpx;
+}
+.tab-container {
+  margin: 0 auto;
+  width: 88%;
+  padding: 5%;
+}
+.tab-container .tab-title {
+  text-align: center;
+}
+.f-title {
+  overflow: hidden;
+  padding: 10rpx;
+  background: #f1f2f4;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.text-center {
+  text-align: center;
+  padding: 10rpx;
+}
+.line {
+  padding: 10rpx;
+  margin: 0 auto;
+}
+.shareArticle {
+  width: 710rpx;
+  height: 80rpx;
+  color: white;
+  margin: 10rpx auto;
+  text-align: center;
+  line-height: 80rpx;
+  background: #ababf3;
+}
+

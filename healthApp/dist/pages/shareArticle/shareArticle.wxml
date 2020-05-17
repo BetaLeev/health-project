@@ -1,0 +1,9 @@
+<block wx:if="{{$taroCompReady}}">
+    <view>
+        <at-input compid="{{$compid__0}}"></at-input>
+        <view class="article-content">文章内容</view>
+        <at-textarea compid="{{$compid__1}}"></at-textarea>
+        <at-button compid="{{$compid__2}}">确认发布</at-button>
+        <at-toast compid="{{$compid__3}}"></at-toast>
+    </view>
+</block>
